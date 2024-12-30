@@ -10,18 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人jsp页面">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyCollection.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyCollection.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/store/storeInfor.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/store/storeManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_2024_12_30_21_42__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taobao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -55,6 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../experiment5" />
@@ -142,6 +142,7 @@
       <workItem from="1735557989243" duration="14000" />
       <workItem from="1735558990399" duration="1691000" />
       <workItem from="1735560983079" duration="5838000" />
+      <workItem from="1735576919240" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
