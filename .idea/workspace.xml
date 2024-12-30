@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="five">
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人jsp页面">
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.css" afterDir="false" />
@@ -20,6 +20,7 @@
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,7 +141,7 @@
       <workItem from="1734796907604" duration="1481000" />
       <workItem from="1735557989243" duration="14000" />
       <workItem from="1735558990399" duration="1691000" />
-      <workItem from="1735560983079" duration="5124000" />
+      <workItem from="1735560983079" duration="5838000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
@@ -177,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734253442204</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="个人jsp页面">
+      <created>1735566332002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1735566332002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +225,7 @@
     <MESSAGE value="three" />
     <MESSAGE value="four" />
     <MESSAGE value="five" />
-    <option name="LAST_COMMIT_MESSAGE" value="five" />
+    <MESSAGE value="个人jsp页面" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人jsp页面" />
   </component>
 </project>
