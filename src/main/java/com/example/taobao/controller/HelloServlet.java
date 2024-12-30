@@ -1,4 +1,4 @@
-package com.example.taobao;
+package com.example.taobao.controller;
 
 import java.io.*;
 import javax.servlet.http.*;
