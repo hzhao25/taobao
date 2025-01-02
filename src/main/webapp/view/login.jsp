@@ -1,4 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
+<%--<%@page import="controller.individual.LoginServlet" %>--%>
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -106,7 +107,7 @@
   <h2>欢迎登录</h2>
 
   <!-- 账号密码登录表单 -->
-  <form action="/login" method="POST">
+  <form action="LoginServlet" method="post">
     <div class="input-group">
       <label for="username">用户名：</label>
       <input type="text" id="username" name="username" placeholder="请输入用户名" required>
