@@ -9,36 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人购物车完善">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/MyAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/MyComment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/AddNewAddress.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Pay.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/ToComment.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/ToComment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/individual/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/individual/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/individual/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/individual/CRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module/individual/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/individual/Service.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyAddress.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyAddress.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人总结" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -237,7 +208,7 @@
       <workItem from="1735702708980" duration="33836000" />
       <workItem from="1735753668423" duration="1719000" />
       <workItem from="1735786401836" duration="29841000" />
-      <workItem from="1735821220208" duration="625000" />
+      <workItem from="1735821220208" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
@@ -288,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735715644381</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="个人总结">
+      <created>1735821886751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735821886751</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +308,7 @@
     <MESSAGE value="five" />
     <MESSAGE value="个人jsp页面" />
     <MESSAGE value="个人购物车完善" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人购物车完善" />
+    <MESSAGE value="个人总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人总结" />
   </component>
 </project>
