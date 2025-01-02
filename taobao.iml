@@ -40,4 +40,7 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="mysql-connector-java-5.1.48 (2)" level="project" />
   </component>
+  <component name="SonarLintModuleSettings">
+    <option name="uniqueId" value="a2c2f18b-3216-4ec9-802f-057e7c6ec2fe" />
+  </component>
 </module>
