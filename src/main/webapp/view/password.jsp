@@ -98,9 +98,10 @@
   </style>
 </head>
 <body>
+
 <div class="container">
   <h2>重置密码</h2>
-  <form action="resetPasswordServlet" method="POST" class="form">
+  <form action="UpdatePasswordServlet" method="POST" class="form">
     <div class="form-group">
       <label for="account">账号/手机号</label>
       <input type="text" id="account" name="account" required placeholder="请输入账号或手机号">
@@ -112,6 +113,10 @@
     <div class="form-group">
       <label for="confirmPassword">确认密码</label>
       <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="请确认新密码">
+      <%-- 如果确认密码错误，显示错误消息 --%>
+      <c:if test="${not empty error && error == '新密码和确认密码不一致'}">
+        <div class="error">${error}</div>
+      </c:if><br>
     </div>
     <button type="submit" class="submit-btn">重置密码</button>
   </form>
