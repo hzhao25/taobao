@@ -177,7 +177,7 @@
         <div class="dropdown-content">
             <a href="#">我的评价</a>
             <a href="#">我的订单</a>
-            <a href="#">购物车</a>
+            <a href="Cart.jsp">购物车</a>
         </div>
     </div>
     <% } else { %>
@@ -278,9 +278,9 @@
             <!-- 商品 7 -->
             <div class="product">
                 <img src="https://puui.qpic.cn/vshpic/0/OuCCTWl-9ht_QXXibon18qB8XH3LtloPIMNeLR4ZI_cG9NMH_0/0.jpg" alt="商品7">
-                <div class="product-name">帆布鞋</div>
+                <div class="product-name">外套</div>
                 <div class="product-price">￥99</div>
-                <input type="hidden" name="productName[]" value="帆布鞋">
+                <input type="hidden" name="productName[]" value="外套">
                 <input type="hidden" name="productPrice[]" value="99">
                 <input type="hidden" name="productImage[]" value="https://puui.qpic.cn/vshpic/0/OuCCTWl-9ht_QXXibon18qB8XH3LtloPIMNeLR4ZI_cG9NMH_0/0.jpg">
             </div>
