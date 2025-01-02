@@ -1,10 +1,5 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 34158
-  Date: 2024/12/30
-  Time: 21:36
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="javaBean.MyAddress" %>
+<%@ page import="java.util.List" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8"%>
 <html>
 <head>
@@ -19,56 +14,47 @@
     <h1>我的收货地址</h1>
 </div>
 
-<!-- 页面主体 -->
+<%
+    // 获取所有地址信息
+    new controller.individual.Servlet().searchAllMyAddress(request);
+    List<MyAddress> addresses = (List<MyAddress>) session.getAttribute("allAddresses");
+
+    // 如果地址列表为空，则显示提示信息
+    if (addresses == null || addresses.isEmpty()) {
+%>
+<p>您还没有添加任何收货地址。</p>
+<%
+} else {
+    // 遍历地址列表并展示每一个地址
+    for (MyAddress address : addresses) {
+        String name = address.getName();
+        String number = address.getNumber();
+        String addre = address.getAddress();
+%>
+<!-- 收货地址项 -->
 <div class="container">
-    <!-- 收货地址项 1 -->
     <div class="address-item">
         <div class="address-info">
-            <h3>张三</h3>
-            <p>北京市朝阳区建国路88号</p>
-            <p>电话：13812345678</p>
-        </div>
-        <div class="address-actions">
-            <button>编辑</button>
-            <button>删除</button>
+            <h3><%= name %></h3>
+            <p><%= addre %></p>
+            <p>电话：<%= number %></p>
         </div>
     </div>
+</div>
+<%
+        }
+    }
+%>
 
-    <!-- 收货地址项 2 -->
-    <div class="address-item">
-        <div class="address-info">
-            <h3>李四</h3>
-            <p>上海市浦东新区世纪大道88号</p>
-            <p>电话：13987654321</p>
-        </div>
-        <div class="address-actions">
-            <button>编辑</button>
-            <button>删除</button>
-        </div>
-    </div>
-
-    <!-- 收货地址项 3 -->
-    <div class="address-item">
-        <div class="address-info">
-            <h3>王五</h3>
-            <p>广东省广州市天汇大厦A座101</p>
-            <p>电话：13765432109</p>
-        </div>
-        <div class="address-actions">
-            <button>编辑</button>
-            <button>删除</button>
-        </div>
-    </div>
-
-    <!-- 添加新地址按钮 -->
-    <div class="add-address-btn">
-        <a href="add_address.jsp" style="text-decoration: none; color: white;">添加新地址</a>
-    </div>
+<!-- 添加新地址按钮 -->
+<div class="add-address-btn">
+    <a href="AddNewAddress.jsp" style="text-decoration: none; color: white;">添加新地址</a>
 </div>
 
 <!-- 页脚 -->
 <div class="footer">
     <span>© 2024 淘宝网</span>
 </div>
+
 </body>
 </html>

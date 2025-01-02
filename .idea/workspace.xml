@@ -9,29 +9,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人jsp页面">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java_5_1_48__2_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/individual/Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/individual/CRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/individual/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/Goods.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/module/individual/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人购物车完善">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/MyAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/MyComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/javaBean/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/AddNewAddress.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Pay.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/ToComment.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/ToComment.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/individual/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/individual/Servlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/individual/CRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/individual/CRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module/individual/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module/individual/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/Confirm.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyAddress.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyComment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/individual/MyOrder.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/Cart.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyAddress.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyAddress.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyComment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/view/individual/MyOrder.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +47,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="CSS File" />
         <option value="Class" />
         <option value="Jsp File" />
-        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -74,7 +80,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dao/individual/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -107,22 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="mysql-connector-java-5.1.48.jar" type="JarApplication" temporary="true">
       <option name="JAR_PATH" value="$PROJECT_DIR$/src/main/webapp/lib/mysql-connector-java-5.1.48.jar" />
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.97" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
       <deployment>
         <artifact name="taobao:war exploded">
           <settings>
@@ -208,6 +204,11 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Servlet" />
+      <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.97" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
@@ -233,7 +234,10 @@
       <workItem from="1735558990399" duration="1691000" />
       <workItem from="1735560983079" duration="5838000" />
       <workItem from="1735702612843" duration="73000" />
-      <workItem from="1735702708980" duration="11725000" />
+      <workItem from="1735702708980" duration="33836000" />
+      <workItem from="1735753668423" duration="1719000" />
+      <workItem from="1735786401836" duration="29841000" />
+      <workItem from="1735821220208" duration="625000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
@@ -277,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735566332002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="个人购物车完善">
+      <created>1735715644381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735715644381</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +329,7 @@
     <MESSAGE value="four" />
     <MESSAGE value="five" />
     <MESSAGE value="个人jsp页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人jsp页面" />
+    <MESSAGE value="个人购物车完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人购物车完善" />
   </component>
 </project>

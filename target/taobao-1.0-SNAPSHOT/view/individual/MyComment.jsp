@@ -1,10 +1,7 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 34158
-  Date: 2024/12/30
-  Time: 21:22
-  To change this template use File | Settings | File Templates.
---%>
+<%@ page import="java.sql.Blob" %>
+<%@ page import="javaBean.MyComment" %>
+<%@ page import="java.util.List" %>
+<%@ page import="controller.individual.Servlet" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="utf-8" %>
 <html>
 <head>
@@ -18,65 +15,58 @@
 <div class="header">
     <h1>我的评价</h1>
 </div>
+
 <!-- 页面主体 -->
+<%
+    new Servlet().searchAllMyComment(request);
+    List<MyComment> comments = (List<MyComment>) session.getAttribute("allComments");
+    for (int i = 0; i < comments.size(); i++) {
+        MyComment comment = comments.get(i);
+        String name = comment.getName();  // 商品名称
+        Blob photo = comment.getPhoto();  // 商品图片
+        float price = comment.getPrice(); // 商品价格
+        String description = comment.getIntroduction();  // 商品描述
+        String photoUrl = comment.convertBlobToBase64(photo); // 将图片Blob转为Base64编码
+        int comment_score = comment.getComment_score(); // 评论星级
+        String evaluate = comment.getComment(); // 评论内容
+%>
+
 <div class="container">
-    <!-- 评价项 1 -->
+    <!-- 评价项 -->
     <div class="review-item">
         <div class="item-info">
-            <img src="https://via.placeholder.com/80" alt="商品图片">
+            <img src="data:image/jpeg;base64,<%= photoUrl %>" alt="商品图片">
             <div>
-                <h3>蓝牙耳机</h3>
-                <p class="price">￥299.00</p>
+                <h3><%= name %></h3>
+                <p class="price">￥<%= price %></p>
+                <p class="description"><%= description %></p>
             </div>
         </div>
         <div class="review-actions">
-            <div class="rating">★★★★☆</div>
-            <p class="review-content">
-                非常好用，音质很清晰，佩戴舒适，适合长时间使用。会推荐给朋友们购买。
-            </p>
-            <button>编辑评价</button>
-        </div>
-    </div>
-
-    <!-- 评价项 2 -->
-    <div class="review-item">
-        <div class="item-info">
-            <img src="https://via.placeholder.com/80" alt="商品图片">
-            <div>
-                <h3>无线鼠标</h3>
-                <p class="price">￥59.00</p>
+            <div class="rating">
+                <%
+                    // 显示星级
+                    for (int j = 0; j < comment_score; j++) {
+                        out.print("★");
+                    }
+                    for (int j = comment_score; j < 5; j++) {
+                        out.print("☆");
+                    }
+                %>
             </div>
-        </div>
-        <div class="review-actions">
-            <div class="rating">★★★☆☆</div>
             <p class="review-content">
-                质量还不错，就是有时候连接有点慢，整体还可以。
+                <%= evaluate %>
             </p>
-            <button>编辑评价</button>
-        </div>
-    </div>
-
-    <!-- 评价项 3 -->
-    <div class="review-item">
-        <div class="item-info">
-            <img src="https://via.placeholder.com/80" alt="商品图片">
-            <div>
-                <h3>智能手表</h3>
-                <p class="price">￥599.00</p>
-            </div>
-        </div>
-        <div class="review-actions">
-            <div class="rating">★★★★★</div>
-            <p class="review-content">
-                非常好，功能齐全，操作简单，续航也很长。非常满意。
-            </p>
-            <button>编辑评价</button>
         </div>
     </div>
 </div>
+
+<% } %>
+
 <!-- 页脚 -->
 <div class="footer">
     <span>© 2024 淘宝网</span>
 </div>
+
 </body>
 </html>
