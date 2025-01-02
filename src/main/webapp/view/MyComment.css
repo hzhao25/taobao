@@ -71,3 +71,21 @@ button:hover {
     background-color: #f4f4f4;
     border-top: 1px solid #ddd;
 }
+
+/* 按钮样式 */
+.back-to-home-btn {
+    background-color: rgb(55, 171, 104); /* 设置按钮的背景色 */
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.back-to-home-btn:hover {
+    background-color: rgb(45, 151, 84); /* 悬停时的背景色 */
+}

@@ -22,7 +22,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet("/individual")
+@WebServlet("/Servlet")
 public class Servlet extends HttpServlet {
     HttpSession session=null;
 
@@ -70,6 +70,8 @@ public class Servlet extends HttpServlet {
             MyAddress addre=new MyAddress(name,number,address);
             Service.addAddress(addre);
             response.sendRedirect("MyAddress.jsp");
+        }else if(request.getParameter("action").equals("lookComment")){
+            response.sendRedirect("MyComment.jsp");
         }
     }
 

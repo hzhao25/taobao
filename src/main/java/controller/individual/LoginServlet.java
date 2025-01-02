@@ -63,5 +63,6 @@ public class LoginServlet extends HttpServlet {
             // 验证失败，返回错误信息
             response.sendRedirect("/failure.jsp"); // 跳转到失败页面
         }
+
     }
 }

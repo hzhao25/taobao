@@ -162,9 +162,9 @@
 <body>
 <%--导航栏--%>
 <div class="navbar">
-    <a href="#">首页</a>
-    <a href="#">购物车</a>
-    <a href="#">登录注册</a>
+    <a href="homePage.jsp">首页</a>
+    <a href="Cart.jsp">购物车</a>
+    <a href="login.jsp">登录注册</a>
     <%
         // 获取 session 中的角色信息
         String role = (String) session.getAttribute("role");

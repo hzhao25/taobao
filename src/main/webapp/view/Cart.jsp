@@ -30,7 +30,6 @@
             document.getElementById('total-price').innerText = '总价：￥' + total.toFixed(2);
         }
     </script>
-
 </head>
 <body>
 <div class="header">

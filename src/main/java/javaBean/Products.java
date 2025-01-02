@@ -1,5 +1,6 @@
 package javaBean;
 import java.math.BigDecimal;
+import java.sql.Blob;
 import java.util.Date;
 
 public class Products {
@@ -12,6 +13,7 @@ public class Products {
     private String shippingInfo;    // 配送描述
     private byte[] image;           // 商品图片，存储为二进制数据（BLOB）
     private String img;
+    private Blob photo;
 
     // 构造函数
     public Products(String name, BigDecimal price, Date createTime, Date updateTime, String description, String shippingInfo, byte[] image) {
@@ -22,6 +24,14 @@ public class Products {
         this.description = description;
         this.shippingInfo = shippingInfo;
         this.image = image;
+    }
+
+    public Blob getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(Blob photo) {
+        this.photo = photo;
     }
 
     public String getImg() {

@@ -16,6 +16,9 @@
     <h1>我的评价</h1>
 </div>
 
+<!-- 返回首页按钮 -->
+<a href="homePage.jsp" class="back-to-home-btn">返回首页</a>
+
 <!-- 页面主体 -->
 <%
     new Servlet().searchAllMyComment(request);

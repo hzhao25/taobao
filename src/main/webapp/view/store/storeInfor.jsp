@@ -84,11 +84,29 @@
       top: 10px;
       right: 10px;
     }
+    /* 按钮样式 */
+    .back-to-home-btn {
+      background-color: rgb(55, 171, 104); /* 设置按钮的背景色 */
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+
+    .back-to-home-btn:hover {
+      background-color: rgb(45, 151, 84); /* 悬停时的背景色 */
+    }
   </style>
 </head>
 <body>
+<a href="homePage.jsp" class="back-to-home-btn">返回首页</a>
 <h1>店铺信息管理</h1>
-
+<!-- 返回首页按钮 -->
 <div class="store-info">
   <h2>店铺信息</h2>
   <div class="info-item">

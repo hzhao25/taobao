@@ -67,9 +67,28 @@
         tr:hover {
             background: #f1f1f1;
         }
+        /* 按钮样式 */
+        .back-to-home-btn {
+            background-color: rgb(55, 171, 104); /* 设置按钮的背景色 */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .back-to-home-btn:hover {
+            background-color: rgb(45, 151, 84); /* 悬停时的背景色 */
+        }
     </style>
 </head>
 <body>
+<!-- 返回首页按钮 -->
+<a href="homePage.jsp" class="back-to-home-btn">返回首页</a>
 <h1>商品管理</h1>
 <form action="manageProduct" method="post">
     <input type="hidden" name="action" value="add">

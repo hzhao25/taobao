@@ -43,7 +43,7 @@
                 statusMessage = "未发货";
             } else if (isDispatch && !isArrive && !isEvaluate) {
                 statusMessage = "已发货，未签收";
-            } else if (isDispatch && isArrive && !isEvaluate) {
+            }else if (isDispatch && isArrive && !isEvaluate) {
                 statusMessage = "已签收，去评价";
                 buttonText = "去评价";
                 buttonAction = "Servlet?action=toComment&index="+i; // 已签收且未评价，跳转到评价页面
@@ -51,7 +51,7 @@
             } else if (isDispatch && isArrive && isEvaluate) {
                 statusMessage = "已评价";
                 buttonText = "查看评价";
-                buttonAction = "Servlet?action=viewEvaluate"; // 已评价，跳转到查看评价页面
+                buttonAction = "Servlet?action=lookComment"; // 已评价，跳转到查看评价页面
                 buttonDisabled = false; // 按钮可点击
             }
 

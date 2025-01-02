@@ -80,12 +80,10 @@ public class CRUD {
                     stmt.setBoolean(5,false);
                     stmt.setBoolean(6,false);
                     stmt.setBoolean(7,false);
+                    stmt.executeUpdate();
                 }
             }
-            if(stmt!=null&&stmt.executeUpdate()>0){
-                stmt.close();
-                return true;
-            }
+            stmt.close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
