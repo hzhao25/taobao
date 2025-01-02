@@ -1,4 +1,6 @@
-<%--
+<%@ page import="Service.store.OrderService" %>
+<%@ page import="model.store.Order" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: 86177
   Date: 2024/12/30
@@ -74,60 +76,37 @@
         <th>状态</th>
         <th>操作</th>
     </tr>
-    <!-- 假数据示例 -->
+
+    <%
+        OrderService orderService = new OrderService();
+        List<Order> orders = orderService.getAllOrders();
+
+        if (orders.isEmpty()) {
+    %>
     <tr>
-        <td>1</td>
-        <td>顾客A</td>
-        <td>待发货</td>
+        <td colspan="4" class="no-orders">当前没有订单。</td>
+    </tr>
+    <%
+    } else {
+        for (Order order : orders) {
+    %>
+    <tr>
+        <td><%= order.getId() %></td>
+        <td><%= order.getCustomerName() %></td>
+        <td><%= order.getStatus() %></td>
         <td>
             <form action="manageOrder" method="post">
                 <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="1">
-                <button type="submit">发货</button>
+                <input type="hidden" name="orderId" value="<%= order.getId() %>">
+                <button type="submit" <%= order.getStatus().equals("已发货") || order.getStatus().equals("已完成") ? "disabled" : "" %>>发货</button>
             </form>
         </td>
     </tr>
-    <tr>
-        <td>2</td>
-        <td>顾客B</td>
-        <td>已发货</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="2">
-                <button type="submit" disabled>已发货</button>
-            </form>
-        </td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>顾客C</td>
-        <td>待发货</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="3">
-                <button type="submit">发货</button>
-            </form>
-        </td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>顾客D</td>
-        <td>已完成</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="4">
-                <button type="submit" disabled>已完成</button>
-            </form>
-        </td>
-    </tr>
+    <%
+            }
+        }
+    %>
 </table>
 
-<!-- 如果没有订单，可以显示以下信息 -->
-<div class="no-orders" style="display:none;">
-    <p>当前没有订单。</p>
-</div>
 </body>
 </html>
