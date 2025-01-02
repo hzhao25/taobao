@@ -9,7 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人总结" />
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人jsp页面" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,7 +70,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.97">
+  <component name="RunManager" selected="JAR 应用程序.mysql-connector-java-5.1.48.jar">
     <configuration name="Servlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.individual.Servlet" />
       <module name="taobao" />
@@ -176,16 +176,10 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Servlet" />
-      <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.97" />
+      <item itemvalue="JAR 应用程序.mysql-connector-java-5.1.48.jar" />
+      <item itemvalue="Tomcat 服务器.Tomcat 9.0.97" />
+      <item itemvalue="应用程序.Servlet" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
-        <item itemvalue="Application.Servlet" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -299,7 +293,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="。" />
