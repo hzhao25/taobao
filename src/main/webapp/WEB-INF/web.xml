@@ -15,5 +15,25 @@
     <!--        当用户请求 http://your-domain/view/LoginServlet 时，Web 容器会调用 LoginServlet 进行处理-->
     <url-pattern>/view/Servlet</url-pattern>
     </servlet-mapping>
+
+    <servlet><!--某个特定的 URL 请求应该由哪个 Servlet 来处理-->
+        <servlet-name>ManageProductServlet</servlet-name>
+        <servlet-class>controller.store.ManageProductServlet</servlet-class><!--包括包名的全名-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageProductServlet</servlet-name>
+        <!--        当用户请求 http://your-domain/view/LoginServlet 时，Web 容器会调用 LoginServlet 进行处理-->
+        <url-pattern>/view/store/ManageProductServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet><!--某个特定的 URL 请求应该由哪个 Servlet 来处理-->
+        <servlet-name>ManageStoreServlet</servlet-name>
+        <servlet-class>controller.store.ManageStoreServlet</servlet-class><!--包括包名的全名-->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageStoreServlet</servlet-name>
+        <!--        当用户请求 http://your-domain/view/LoginServlet 时，Web 容器会调用 LoginServlet 进行处理-->
+        <url-pattern>/view/store/ManageStoreServlet</url-pattern>
+    </servlet-mapping>
 </web-app>
 

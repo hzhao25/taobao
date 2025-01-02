@@ -1,11 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 86177
-  Date: 2024/12/30
-  Time: 21:15
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="java.util.List" %>
+<%@ page import="model.store.StoreOrder" %>
+<%@ page import="Service.store.StoreOrderService" %>
+
+<%
+    StoreOrderService storeOrderService = new StoreOrderService();
+    List<StoreOrder> orders = storeOrderService.getAllOrders();
+%>
+
 <!DOCTYPE html>
 <html lang="zh">
 <head>
@@ -88,64 +90,28 @@
 <table>
     <tr>
         <th>订单ID</th>
-        <th>顾客名称</th>
+        <th>顾客ID</th>
         <th>状态</th>
         <th>操作</th>
     </tr>
-    <!-- 假数据示例 -->
+    <%
+        for (StoreOrder order : orders) {
+    %>
     <tr>
-        <td>1</td>
-        <td>顾客A</td>
-        <td>待发货</td>
+        <td><%= order.getId() %></td>
+        <td><%= order.getCustomerId() %></td>
+        <td><%= order.getStatus() %></td>
         <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="1">
-                <button type="submit">发货</button>
+            <form action="orderDetails.jsp" method="get">
+                <input type="hidden" name="orderId" value="<%= order.getId() %>">
+                <button type="submit">查看详情</button>
             </form>
         </td>
     </tr>
-    <tr>
-        <td>2</td>
-        <td>顾客B</td>
-        <td>已发货</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="2">
-                <button type="submit" disabled>已发货</button>
-            </form>
-        </td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>顾客C</td>
-        <td>待发货</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="3">
-                <button type="submit">发货</button>
-            </form>
-        </td>
-    </tr>
-    <tr>
-        <td>4</td>
-        <td>顾客D</td>
-        <td>已完成</td>
-        <td>
-            <form action="manageOrder" method="post">
-                <input type="hidden" name="action" value="ship">
-                <input type="hidden" name="orderId" value="4">
-                <button type="submit" disabled>已完成</button>
-            </form>
-        </td>
-    </tr>
+    <%
+        }
+    %>
 </table>
 
-<!-- 如果没有订单，可以显示以下信息 -->
-<div class="no-orders" style="display:none;">
-    <p>当前没有订单。</p>
-</div>
 </body>
 </html>
