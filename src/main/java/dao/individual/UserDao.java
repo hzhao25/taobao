@@ -1,18 +1,18 @@
 package dao.individual;
 
+import javaBean.Goods;
+import javaBean.Products;
 import javaBean.User;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.io.File;
+import java.io.FileInputStream;
+import java.sql.*;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
-import java.util.ArrayList;
-import java.util.List;
+import static java.lang.System.out;
 
-import javaBean.*;
 public class UserDao {
 
     //    验证登录用户(单个用户)
@@ -81,7 +81,7 @@ public class UserDao {
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getPassword());
-            System.out.println(user.getUsername()+user.getPassword());
+            out.println(user.getUsername()+user.getPassword());
             if (stmt.executeUpdate() > 0) {
                 isValid = true;
             }
@@ -117,6 +117,80 @@ public class UserDao {
         }
 
         return updateSuccess;  // 返回更新是否成功
+    }
+
+    //传入商品图片
+    public static boolean saveImg(String name, String url) throws Exception {
+        boolean isValid =false;
+        FileInputStream fis = null;
+        String sql = "UPDATE products SET imge(UUID) = ? WHERE name = ?";
+        try(Connection connection = DBUtil.getConnection();
+            PreparedStatement statement = connection.prepareStatement(sql)) {
+            File file = new File(url);
+            fis = new FileInputStream(file);
+            //设定数据
+            statement.setBinaryStream(1, fis, (int) file.length());
+            statement.setString(2,name);
+            statement.executeUpdate();
+            if(statement.executeUpdate()>0){
+                isValid =true;
+                out.println("学生图片添加成功");
+            } else {
+                out.println("学生图片添加失败");
+            }
+        }
+        return isValid;
+    }
+    //读取图片
+    public static Blob getStudentPic(String name){
+        String sql = "SELECT imge(UUID) FROM products WHERE name = ?";
+        try (Connection connection = DBUtil.getConnection();
+             PreparedStatement ps = connection.prepareStatement(sql)) {
+            ps.setString(1, name);
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
+                return rs.getBlob("picture");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+        return null;
+    }
+    // 获取所有商品
+    public static List<Products> getProductList() throws SQLException {
+        // 定义一个列表来存储所有商品
+//        List<Products> productList = new ArrayList<>();
+        Connection connection = DBUtil.getConnection();
+        List<Products> g=new ArrayList<>();
+        String sql="select * from products";
+        Statement stmt=connection.createStatement();
+        ResultSet rs=stmt.executeQuery(sql);
+        while (rs.next()){
+            Products goods=new Products();
+            goods.setId(rs.getInt("id"));
+            goods.setName(rs.getString("name"));
+            goods.setImg(rs.getString("image"));
+            goods.setPrice(rs.getBigDecimal("price"));
+            goods.setDescription(rs.getString("description"));
+            goods.setShippingInfo(rs.getString("shipping_info"));
+            g.add(goods);
+        }
+//        if (g != null) {
+//            for (int i = 0; i < g.size(); i++) {
+//                Products product = g.get(i);  // 获取商品对象
+//                out.println("商品 ID: " + product.getId());
+//                out.println("商品名称: " + product.getName());
+//                out.println("商品价格: " + product.getPrice());
+//                out.println("img:"+product.getImg());
+//                out.println("描述："+product.getDescription());
+//                out.println("配送："+product.getShippingInfo());
+//                out.println("----------------------");  // 用于分隔每个商品的输出
+//            }
+//        }
+        // 返回包含所有商品的列表
+        return g;
     }
 
 }

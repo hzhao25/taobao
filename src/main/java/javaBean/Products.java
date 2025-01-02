@@ -3,7 +3,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 
 public class Products {
-
+    private int id;
     private String name;            // 商品名称
     private BigDecimal price;       // 商品价格
     private Date createTime;        // 商品创建时间
@@ -11,6 +11,7 @@ public class Products {
     private String description;     // 商品描述
     private String shippingInfo;    // 配送描述
     private byte[] image;           // 商品图片，存储为二进制数据（BLOB）
+    private String img;
 
     // 构造函数
     public Products(String name, BigDecimal price, Date createTime, Date updateTime, String description, String shippingInfo, byte[] image) {
@@ -23,8 +24,32 @@ public class Products {
         this.image = image;
     }
 
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     // 默认构造函数
     public Products() {
+    }
+
+    public Products(int id, String name, String description, BigDecimal price, String shipping_info, String image) {
+        this.name = name;
+        this.price = price;
+        this.description = description;
+        this.shippingInfo = shipping_info;
+        this.img = image;
     }
 
     // Getter 和 Setter 方法

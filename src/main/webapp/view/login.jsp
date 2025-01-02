@@ -118,6 +118,19 @@
       <input type="password" id="password" name="password" placeholder="请输入密码" required>
     </div>
 
+    <!-- 用户类型选择开关 -->
+    <div class="input-group">
+      <label for="user-role">登录角色：</label>
+      <div>
+        <label for="user-role">
+          <input type="radio" id="user-role" name="role" value="user"> 用户
+        </label>
+        <label for="merchant-role">
+          <input type="radio" id="merchant-role" name="role" value="merchant"> 商家
+        </label>
+      </div>
+    </div>
+
     <button type="submit" class="btn-login">登录</button>
   </form>
 

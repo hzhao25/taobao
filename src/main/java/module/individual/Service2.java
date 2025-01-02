@@ -1,8 +1,10 @@
 package module.individual;
 
 import dao.individual.UserDao;
+import javaBean.Products;
 import javaBean.User;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class Service2 {
@@ -21,5 +23,9 @@ public class Service2 {
 
     public boolean updateUserpassword(String username, String newPassword) {
         return UserDao.updatePassword(username,newPassword);
+    }
+
+    public static List<Products> getProductList() throws SQLException {
+        return UserDao.getProductList();
     }
 }
