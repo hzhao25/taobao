@@ -1,58 +1,60 @@
+<%@ page import="javaBean.Order" %>
+<%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="javaBean.Goods" %>
+<%@ page import="javax.lang.model.element.NestingKind" %>
+<%@ page import="java.sql.Blob" %>
+<%@ page import="controller.individual.Servlet" %>
+<%@ page import="javaBean.MyAddress" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
-<html>
+<html lang="zh">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>确认地址和支付方式</title>
     <link rel="stylesheet" href="Confirm.css">
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <h2>请确认</h2>
+        <h2>请确认信息</h2>
     </div>
-
-    <form action="confirmOrder.jsp" method="POST">
+    <%
+        // 获取所有地址
+        new Servlet().searchAllMyAddress(request);
+        List<MyAddress> addresses = (List<MyAddress>) session.getAttribute("allAddresses");
+    %>
+    <form action="Pay.jsp" method="POST">
         <!-- 收货地址选择 -->
         <div class="form-group">
-            <label for="address" class="label">选择收货地址:</label>
-            <select id="address" name="address" class="select" required>
-                <option value="address1">
-                    <div>
-                        <h3>姓名：张三</h3>
-                        <p>地址：北京市朝阳区建国路88号</p>
-                        <p>电话：13812345678</p>
-                    </div>
+            <label for="address">选择收货地址:</label>
+            <select id="address" name="address" required>
+                <%
+                    for (MyAddress address : addresses) {
+                        String name = address.getName();
+                        String number = address.getNumber();
+                        String addre = address.getAddress();
+                %>
+                <option value="<%= addre %>">
+                    <%= name %> - <%= addre %> - <%= number %>
                 </option>
-                <option value="address2">
-                    <div>
-                        <h3>姓名：李四</h3>
-                        <p>地址：上海市浦东新区世纪大道88号</p>
-                        <p>电话：13987654321</p>
-                    </div>
-                </option>
-                <option value="address3">
-                    <div>
-                        <h3>姓名：王五</h3>
-                        <p>地址广东省广州市天汇大厦A座101</p>
-                        <p>电话：13765432109</p>
-                    </div>
-                </option>
+                <%
+                    }
+                %>
             </select>
         </div>
 
         <!-- 支付方式选择 -->
         <div class="form-group">
-            <label for="payment" class="label">选择支付方式:</label>
-            <select id="payment" name="payment" class="select" required>
+            <label for="payment">选择支付方式:</label>
+            <select id="payment" name="payment" required>
                 <option value="alipay">支付宝</option>
                 <option value="wechat">微信支付</option>
                 <option value="creditCard">信用卡</option>
             </select>
         </div>
 
-        <!-- 隐藏的购物车商品信息 -->
-        <input type="hidden" name="selectedItems" value="<%= request.getParameter("selectedItems") %>" />
-
-        <button type="submit" class="btn">确认订单</button>
+        <button type="submit" class="btn">确认</button>
     </form>
 </div>
 </body>

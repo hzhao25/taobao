@@ -9,39 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="配置文件">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/store/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/store/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/store/StoreService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/store/ManageProductServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/store/ManageStoreServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/store/OrderDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/store/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/store/StoreDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/store/lib/mysql-connector-java-5.1.48.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/store/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/store/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/store/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/store/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/storeInfor.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/storeInfor.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/storeManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/goodManage.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/taobao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/taobao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/taobao/controller/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/taobao/controller/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/classes/com/example/taobao/controller/HelloServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/classes/com/example/taobao/controller/HelloServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人总结" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,22 +18,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -88,18 +48,17 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../NewWeb5-2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/dao/individual/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="项目" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\taobao\src\main\java\dao\store" />
       <recent name="D:\专业集合\JavaWeb\淘宝大作业\src\main\java\dao\individual\lib" />
       <recent name="D:\专业集合\JavaWeb\淘宝大作业\src\main\webapp\lib" />
     </key>
@@ -111,18 +70,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 服务器.Tomcat 9.0.97">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.97">
     <configuration name="Servlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.individual.Servlet" />
       <module name="taobao" />
@@ -228,13 +176,14 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JAR 应用程序.mysql-connector-java-5.1.48.jar" />
-      <item itemvalue="Tomcat 服务器.Tomcat 9.0.97" />
-      <item itemvalue="应用程序.Servlet" />
+      <item itemvalue="Application.Servlet" />
+      <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.97" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR 应用程序.mysql-connector-java-5.1.48.jar" />
+        <item itemvalue="JAR Application.mysql-connector-java-5.1.48.jar" />
+        <item itemvalue="Application.Servlet" />
       </list>
     </recent_temporary>
   </component>
@@ -256,9 +205,10 @@
       <workItem from="1735558990399" duration="1691000" />
       <workItem from="1735560983079" duration="5838000" />
       <workItem from="1735702612843" duration="73000" />
-      <workItem from="1735702708980" duration="11725000" />
-      <workItem from="1735835737010" duration="839000" />
-      <workItem from="1735836623998" duration="1605000" />
+      <workItem from="1735702708980" duration="33836000" />
+      <workItem from="1735753668423" duration="1719000" />
+      <workItem from="1735786401836" duration="29841000" />
+      <workItem from="1735821220208" duration="1003000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
@@ -302,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1735566332002</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="个人购物车完善">
+      <created>1735715644381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735715644381</updated>
+    </task>
+    <task id="LOCAL-00008" summary="个人总结">
+      <created>1735821886751</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1735821886751</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +307,8 @@
     <MESSAGE value="four" />
     <MESSAGE value="five" />
     <MESSAGE value="个人jsp页面" />
-    <MESSAGE value="配置文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件" />
+    <MESSAGE value="个人购物车完善" />
+    <MESSAGE value="个人总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="个人总结" />
   </component>
 </project>

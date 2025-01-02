@@ -141,17 +141,8 @@
 <%--String productId = request.getParameter("id"); // 获取传递的商品 ID--%>
 <%
   List<Products> productList = (List<Products>) session.getAttribute("productList");
-  Products selectedProduct = null;
+  Products selectedProduct = (Products) session.getAttribute("selectProduct");
 
-  if (productList != null) {
-    for (Products product : productList) {
-      if (product.getId() == 1) {
-        selectedProduct = product; // 根据 ID 查找商品
-        System.out.println(selectedProduct.getName());
-        break;
-      }
-    }
-  }
 %>
 <div class="container">
   <!-- 商品信息区域 -->
