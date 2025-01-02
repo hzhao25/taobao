@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
+<web-app >
+<!--    xmlns="http://xmlns.jcp.org/xml/ns/javaee"-->
+<!--         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"-->
+<!--         version="4.0">-->
 
-
-    <!--<servlet>&lt;!&ndash;某个特定的 URL 请求应该由哪个 Servlet 来处理&ndash;&gt;-->
-    <!--<servlet-name>LoginServlet</servlet-name>-->
-    <!--<servlet-class>zk.edu.cn.experiment5_controller.LoginServlet</servlet-class>&lt;!&ndash;包括包名的全名&ndash;&gt;-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-    <!--<servlet-name>LoginServlet</servlet-name>-->
-    <!--&lt;!&ndash;        当用户请求 http://your-domain/view/LoginServlet 时，Web 容器会调用 LoginServlet 进行处理&ndash;&gt;-->
-    <!--<url-pattern>/experiment5_view/LoginServlet</url-pattern>-->
-    <!--</servlet-mapping>-->
+    <servlet>
+        <servlet-name>ManageStoreServlet</servlet-name>
+        <servlet-class>controller.store.ManageStoreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageStoreServlet</servlet-name>
+        <url-pattern>/view/store/ManageStoreServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ManageProductServlet</servlet-name>
+        <servlet-class>controller.store.ManageProductServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageProductServlet</servlet-name>
+        <url-pattern>/view/store/ManageProductServlet</url-pattern>
+    </servlet-mapping>
+<!--    <servlet>&lt;!&ndash;某个特定的 URL 请求应该由哪个 Servlet 来处理&ndash;&gt;-->
+<!--    <servlet-name>LoginServlet</servlet-name>-->
+<!--    <servlet-class>zk.edu.cn.experiment5_controller.LoginServlet</servlet-class>&lt;!&ndash;包括包名的全名&ndash;&gt;-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--    <servlet-name>LoginServlet</servlet-name>-->
+<!--    &lt;!&ndash;        当用户请求 http://your-domain/view/LoginServlet 时，Web 容器会调用 LoginServlet 进行处理&ndash;&gt;-->
+<!--    <url-pattern>/experiment5_view/LoginServlet</url-pattern>-->
+<!--    </servlet-mapping>-->
 </web-app>
 

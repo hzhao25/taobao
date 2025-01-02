@@ -1,3 +1,5 @@
+<%@ page import="Service.store.StoreService" %>
+<%@ page import="model.store.Store" %>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="zh">
@@ -86,22 +88,32 @@
     }
   </style>
 </head>
+</head>
 <body>
 <h1>店铺信息管理</h1>
+
+<%
+  StoreService storeService = new StoreService();
+  int storeId = 1;
+  Store store = storeService.getStore(storeId);
+%>
 
 <div class="store-info">
   <h2>店铺信息</h2>
   <div class="info-item">
-    <span class="info-title">店铺名称：</span> ${store.storeName}
+    <span class="info-title">店铺名称：</span> <%= store.getStoreName() %>
   </div>
   <div class="info-item">
-    <span class="info-title">店铺描述：</span> ${store.description}
+    <span class="info-title">店铺描述：</span> <%= store.getDescription() %>
   </div>
   <div class="info-item">
-    <span class="info-title">开店时长：</span> ${store.storeDuration}
+    <span class="info-title">开店时长：</span> <%= store.getStoreDuration() %> 个月
   </div>
   <div class="info-item">
-    <span class="info-title">所在地区：</span> ${store.location}
+    <span class="info-title">所在地区：</span> <%= store.getLocation() %>
+  </div>
+  <div class="info-item">
+    <span class="info-title">开店时间：</span> <%= store.getOpeningTime() %>
   </div>
 </div>
 
@@ -113,22 +125,23 @@
 
   <h2>更新店铺信息</h2>
 
-  <form action="manageStore" method="post">
+  <form action="ManageStoreServlet" method="post">
+    <input type="hidden" name="storeId" value="<%= storeId %>">
     <div>
       <label class="info-title">店铺名称：</label>
-      <input type="text" name="storeName" value="${store.storeName}" required>
+      <input type="text" name="storeName" value="<%= store.getStoreName() %>" required>
     </div>
     <div>
       <label class="info-title">店铺描述：</label>
-      <textarea name="description" placeholder="店铺描述" rows="4" required>${store.description}</textarea>
+      <textarea name="description" placeholder="店铺描述" rows="4" required><%= store.getDescription() %></textarea>
     </div>
     <div>
       <label class="info-title">店铺地点：</label>
-      <input type="text" name="storeLocation" value="${store.location}" placeholder="店铺地点" required>
+      <input type="text" name="storeLocation" value="<%= store.getLocation() %>" placeholder="店铺地点" required>
     </div>
     <div>
       <label class="info-title">开店时间：</label>
-      <input type="date" name="openingTime" value="${store.openingTime}" required>
+      <input type="date" name="openingTime" value="<%= store.getOpeningTime() %>" required>
     </div>
     <button type="submit">更新信息</button>
   </form>
