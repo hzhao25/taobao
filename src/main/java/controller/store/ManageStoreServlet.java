@@ -38,6 +38,6 @@ public class ManageStoreServlet extends HttpServlet {
         storeService.updateStore(store);
 
         // 重定向回店铺信息页面
-        response.sendRedirect("storeInfo.jsp?storeId=" + storeId);
+        response.sendRedirect("storeInfor.jsp?storeId=" + storeId);
     }
 }

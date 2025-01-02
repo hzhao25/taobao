@@ -6,7 +6,7 @@ public class Store {
     private int id;
     private String storeName;
     private String description;
-    private int storeDuration; // 以月为单位
+    private int storeDuration;
     private String location;
     private Date openingTime;
 

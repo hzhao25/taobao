@@ -2,6 +2,7 @@ package dao.store;
 
 import model.store.Product;
 
+import java.io.ByteArrayInputStream;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -9,18 +10,19 @@ import java.util.List;
 public class ProductDao {
     private String jdbcURL = "jdbc:mysql://localhost:3306/taobao";
     private String dbUser = "root";
-    private String dbPass = "root123456";
+    private String dbPass = "123456";
 
     public void addProduct(Product product) {
         String sql = "INSERT INTO products (name, price, description, shipping_info, image) VALUES (?, ?, ?, ?, ?)";
-        System.out.println("插入表中");
+        System.out.println(new ByteArrayInputStream(product.getImage()));
+
         try (Connection connection = DriverManager.getConnection(jdbcURL, dbUser, dbPass);
              PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setString(1, product.getName());
             statement.setDouble(2, product.getPrice());
             statement.setString(3, product.getDescription());
             statement.setString(4, product.getShippingInfo());
-            statement.setBytes(5, product.getImage());
+            statement.setBlob(5,new ByteArrayInputStream(product.getImage()));
             statement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();

@@ -1,5 +1,7 @@
 package model.store;
 
+import java.sql.Blob;
+
 public class Product {
     private int id;
     private String name;

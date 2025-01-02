@@ -7,7 +7,7 @@ import java.sql.*;
 public class StoreDao {
     private String jdbcURL = "jdbc:mysql://localhost:3306/taobao?useUnicode=true&characterEncoding=UTF-8";
     private String dbUser = "root";
-    private String dbPass = "root123456";
+    private String dbPass = "123456";
 
     public Store getStoreById(int id) {
         Store store = null;

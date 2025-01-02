@@ -9,7 +9,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人总结" />
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="配置文件">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/store/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Service/store/StoreOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/store/CustomerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/store/StoreOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/view/store/orderDetails.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/taobao_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/store/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/store/ManageProductServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/store/ManageProductServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/store/ManageStoreServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/store/ManageStoreServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/store/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/store/StoreOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/store/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/store/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/store/StoreDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/store/StoreDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/store/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/store/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/store/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/store/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/store/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/store/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/store/Store.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/goodManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/goodManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +106,19 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -266,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1735821886751</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="配置文件">
+      <created>1735838908059</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1735838908059</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,6 +355,7 @@
     <MESSAGE value="个人jsp页面" />
     <MESSAGE value="个人购物车完善" />
     <MESSAGE value="个人总结" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人总结" />
+    <MESSAGE value="配置文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="配置文件" />
   </component>
 </project>

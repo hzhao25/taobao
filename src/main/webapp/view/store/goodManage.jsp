@@ -81,7 +81,7 @@
 %>
 
 <h2>添加商品</h2>
-<form action="ManageProductServlet?action=add" method="post" enctype="multipart/form-data">
+<form action="ManageProductServlet?action=add" method="post">
     <input type="text" name="name" placeholder="商品名称" required>
     <input type="number" step="0.01" name="price" placeholder="价格" required>
     <textarea name="description" placeholder="描述" rows="4" required></textarea>
@@ -96,6 +96,7 @@
         <th>商品ID</th>
         <th>商品名称</th>
         <th>价格</th>
+        <th>图片</th>
         <th>状态</th>
         <th>操作</th>
     </tr>
@@ -106,6 +107,7 @@
         <td><%= product.getId() %></td>
         <td><%= product.getName() %></td>
         <td><%= product.getPrice() %></td>
+        <td><%= product.getImage() %></td>
         <td><%= product.isAvailable() ? "上架" : "下架" %></td>
         <td>
             <form action="ManageProductServlet" method="post" style="display:inline;">

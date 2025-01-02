@@ -4,12 +4,16 @@ import Service.store.ProductService;
 import model.store.Product;
 
 import javax.servlet.ServletException;
+import javax.servlet.ServletInputStream;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.Part;
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
+import java.sql.Blob;
+
 @WebServlet("/ManageProductServlet")
 public class ManageProductServlet extends HttpServlet {
     private ProductService productService = new ProductService();
@@ -21,17 +25,15 @@ public class ManageProductServlet extends HttpServlet {
         String action = request.getParameter("action");
 
         if ("add".equals(action)) {
-            System.out.println("进来servlet啦");
             String name = request.getParameter("name");
-            System.out.println(request.getParameter("name"));
-            System.out.println(request.getParameter("price"));
             double price = Double.parseDouble(request.getParameter("price"));
             String description = request.getParameter("description");
             String shippingInfo = request.getParameter("shippingInfo");
-            Part imagePart = request.getPart("image");
-            byte[] image = imagePart.getInputStream().readAllBytes();
+            // 获取 ServletInputStream
+            ServletInputStream inputStream = request.getInputStream();
+            byte[] imageBytes = readInputStream(inputStream);
 
-            Product product = new Product(0, name, price, description, shippingInfo, image, true, false); // 默认上架
+            Product product = new Product(0, name, price, description, shippingInfo, imageBytes, true, false); // 默认上架
             System.out.println(product);
             productService.addProduct(product);
 
@@ -62,4 +64,13 @@ public class ManageProductServlet extends HttpServlet {
 
         response.sendRedirect("goodManage.jsp");
     }
+
+    private byte[] readInputStream(ServletInputStream inputStream) throws IOException {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        byte[] buffer = new byte[1024];
+        int bytesRead;
+        while ((bytesRead = inputStream.read(buffer)) != -1) {
+            baos.write(buffer, 0, bytesRead);
+        }
+        return baos.toByteArray(); }
 }
