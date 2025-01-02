@@ -100,7 +100,7 @@
 <body>
 <div class="container">
   <h2>注册账号</h2>
-  <form action="registerServlet" method="POST" class="form">
+  <form action="RegisterServlet" method="POST" class="form">
     <div class="form-group">
       <label for="username">用户名</label>
       <input type="text" id="username" name="username" required placeholder="请输入用户名">

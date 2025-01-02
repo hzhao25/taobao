@@ -27,8 +27,6 @@
             <h3>张三</h3>
             <p>北京市朝阳区建国路88号</p>
             <p>电话：13812345678</p>
-            <p>邮政编码：100022</p>
-            <p>备注：无</p>
         </div>
         <div class="address-actions">
             <button>编辑</button>
@@ -42,8 +40,6 @@
             <h3>李四</h3>
             <p>上海市浦东新区世纪大道88号</p>
             <p>电话：13987654321</p>
-            <p>邮政编码：200122</p>
-            <p>备注：请尽量快递送达</p>
         </div>
         <div class="address-actions">
             <button>编辑</button>
@@ -57,8 +53,6 @@
             <h3>王五</h3>
             <p>广东省广州市天汇大厦A座101</p>
             <p>电话：13765432109</p>
-            <p>邮政编码：510000</p>
-            <p>备注：顺丰快递</p>
         </div>
         <div class="address-actions">
             <button>编辑</button>
