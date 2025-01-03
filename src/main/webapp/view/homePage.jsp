@@ -175,8 +175,8 @@
     <div class="dropdown">
         <a href="#">个人</a>
         <div class="dropdown-content">
-            <a href="#">我的评价</a>
-            <a href="#">我的订单</a>
+            <a href="MyComment.jsp">我的评价</a>
+            <a href="MyOrder.jsp">我的订单</a>
             <a href="Cart.jsp">购物车</a>
         </div>
     </div>
@@ -185,9 +185,9 @@
     <div class="dropdown">
         <a href="#">店铺</a>
         <div class="dropdown-content">
-            <a href="#">我的商品</a>
-            <a href="#">客户评价</a>
-            <a href="#">客户订单</a>
+            <a href="goodManage.jsp">我的商品</a>
+            <a href="storeInfor.jsp">店铺信息</a>
+            <a href="orderManage.jsp">客户订单</a>
         </div>
     </div>
     <% } %>

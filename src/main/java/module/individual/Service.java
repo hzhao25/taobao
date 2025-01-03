@@ -1,11 +1,10 @@
 package module.individual;
 
 import dao.individual.CRUD;
-import javaBean.Goods;
-import javaBean.MyAddress;
-import javaBean.MyComment;
-import javaBean.Order;
+import javaBean.*;
+import model.store.Product;
 
+import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
 
@@ -47,5 +46,10 @@ public class Service {
     //添加新地址
     public static void addAddress(MyAddress address){
         CRUD.addAddress(address);
+    }
+
+    public static boolean inCart(Products p) throws SQLException, IOException {
+        CRUD.inCart(p);
+        return true;
     }
 }

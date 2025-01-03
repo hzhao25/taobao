@@ -38,13 +38,14 @@ public class ManageProductServlet extends HttpServlet {
             productService.addProduct(product);
 
         } else if ("update".equals(action)) {
+//            System.out.println("更新页面");
             int productId = Integer.parseInt(request.getParameter("productId"));
             String newName = request.getParameter("newName");
             double newPrice = Double.parseDouble(request.getParameter("newPrice"));
             String newDescription = request.getParameter("newDescription");
             String newShippingInfo = request.getParameter("newShippingInfo");
-            Part newImagePart = request.getPart("newImage");
-            byte[] newImage = newImagePart.getInputStream().readAllBytes();
+            ServletInputStream inputStream = request.getInputStream();
+            byte[] newImage = readInputStream(inputStream);
 
             Product product = new Product(productId, newName, newPrice, newDescription, newShippingInfo, newImage, true, false);
             productService.updateProduct(product);

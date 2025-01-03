@@ -1,10 +1,8 @@
 package controller.individual;
 
 import dao.individual.CRUD;
-import javaBean.Goods;
-import javaBean.MyAddress;
-import javaBean.MyComment;
-import javaBean.Order;
+import javaBean.*;
+import model.store.Product;
 import module.individual.Service;
 
 import javax.servlet.RequestDispatcher;
@@ -30,10 +28,13 @@ public class Servlet extends HttpServlet {
         request.setCharacterEncoding("UTF-8");
         session=request.getSession();
         if (request.getParameter("action").equals("ordersAdd")){
+            //把勾选的购物车商品添加到订单里面
             ordersAdd(session,request,response);
         }else if (request.getParameter("action").equals("payOrders")){
+            //支付完成后把订单添加到订单数据表里
             payOrders(response,request);
             try {
+                //查找所有的订单商品信息
                 searchAllOrders(request);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
@@ -51,11 +52,13 @@ public class Servlet extends HttpServlet {
             dispatcher.forward(request,response);
         }else if(request.getParameter("action").equals("addComment")){
             try {
+                //评价完订单后把评价放到我的评价表里
                 addComment(response,request);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
             }
             try {
+                //查找所有的我的评价
                 searchAllMyComment(request);
             } catch (SQLException throwables) {
                 throwables.printStackTrace();
@@ -68,10 +71,19 @@ public class Servlet extends HttpServlet {
             String address=request.getParameter("address");
             String number=request.getParameter("number");
             MyAddress addre=new MyAddress(name,number,address);
+            //添加地址
             Service.addAddress(addre);
             response.sendRedirect("MyAddress.jsp");
         }else if(request.getParameter("action").equals("lookComment")){
             response.sendRedirect("MyComment.jsp");
+        }else if(request.getParameter("action").equals("inCart")){
+            try {
+                //加入购物车
+                inCart(response,request);
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+            response.sendRedirect("Cart.jsp");
         }
     }
 
@@ -181,5 +193,10 @@ public class Servlet extends HttpServlet {
             session = request.getSession(true);
             session.setAttribute("allAddresses", addresses);
         }
+    }
+
+    public void inCart(HttpServletResponse  response,HttpServletRequest request) throws SQLException, IOException {
+        Products p=(Products) session.getAttribute("p");
+        Service.inCart(p);
     }
 }

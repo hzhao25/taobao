@@ -24,7 +24,7 @@ public class ManageStoreServlet extends HttpServlet {
         String storeLocation = request.getParameter("storeLocation");
         String openingTimeStr = request.getParameter("openingTime");
 
-        Store store = new Store(storeId, storeName, description, 0, storeLocation, null);
+        Store store = new Store(storeId, storeName, description,5, storeLocation, null);
 
         // 解析开店时间
         try {

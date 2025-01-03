@@ -128,13 +128,29 @@
         .actions button:last-child {
             margin-right: 0;
         }
+        /* 按钮样式 */
+        .back-to-home-btn {
+            background-color: rgb(55, 171, 104); /* 设置按钮的背景色 */
+            color: white;
+            font-size: 16px;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
 
+        .back-to-home-btn:hover {
+            background-color: rgb(45, 151, 84); /* 悬停时的背景色 */
+        }
     </style>
 </head>
 <body>
 <!-- 顶部导航 -->
 <div class="header">
-    <a href="contact.jsp" class="header-link">联系客服</a>
+    <a href="homePage.jsp" class="back-to-home-btn">返回首页</a>
     <a href="store.jsp" class="header-link">进入店铺</a>
 </div>
 <%-- 获取商品列表 --%>
@@ -153,6 +169,7 @@
         }
     }
 %>
+<%session.setAttribute("p",selectedProduct);%>
 <div class="container">
     <!-- 商品信息区域 -->
     <div class="product-info">
@@ -176,11 +193,13 @@
                 <span class="delivery-info"><%= selectedProduct.getShippingInfo() %></span>
             </div>
 
-            <div class="actions">
-                <button class="buy-now-btn">立即购买</button>
-                <button class="add-to-cart-btn">加入购物车</button>
-                <button class="add-to-wishlist-btn">收藏</button>
-            </div>
+            <form action="Servlet?action=inCart" method="post">
+                <div class="actions">
+                    <button class="buy-now-btn" type="submit">>立即购买</button>
+                    <button class="add-to-cart-btn" type="submit">加入购物车</button>
+                    <button class="add-to-wishlist-btn">收藏</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

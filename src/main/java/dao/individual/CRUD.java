@@ -1,12 +1,12 @@
 package dao.individual;
 
-import javaBean.Goods;
-import javaBean.MyAddress;
-import javaBean.MyComment;
-import javaBean.Order;
+import javaBean.*;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -83,7 +83,7 @@ public class CRUD {
                     stmt.executeUpdate();
                 }
             }
-            stmt.close();
+//            stmt.close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -241,4 +241,19 @@ public class CRUD {
         }
         return false;
     }
-}
+
+    public static void inCart(Products p) throws SQLException, IOException {
+        Connection conn = CRUD.getConn();
+        String sql = "INSERT INTO cartgoods (name, photo,price, introduction) VALUES (?,?, ?, ?)";
+        PreparedStatement psmt = conn.prepareStatement(sql);
+            URL url = new URL(p.getImg());
+            InputStream in = url.openStream();
+            psmt.setString(1,p.getName());
+//                psmt.setString(2,product.getImg());
+//                FileInputStream in=new FileInputStream(product.getImg());
+            psmt.setBlob(2,in);
+            psmt.setBigDecimal(3,p.getPrice());
+            psmt.setString(4,p.getDescription());
+            System.out.println(p.getName());
+            psmt.executeUpdate();
+}}
