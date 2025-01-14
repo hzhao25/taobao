@@ -53,4 +53,18 @@ public class StoreOrderDao {
         }
         return order;
     }
+
+    public void updateOrderStatus(int orderId, String status) {
+        String sql = "UPDATE storeorders SET status = ? WHERE id = ?";
+
+        try (Connection connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+             PreparedStatement pstmt = connection.prepareStatement(sql)) {
+
+            pstmt.setString(1, status);
+            pstmt.setInt(2, orderId);
+            pstmt.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }

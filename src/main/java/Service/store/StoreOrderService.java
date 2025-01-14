@@ -15,4 +15,8 @@ public class StoreOrderService {
     public StoreOrder getOrderById(int id) {
         return storeOrderDao.getOrderById(id);
     }
+
+    public void updateOrderStatus(int orderId, String status) {
+        storeOrderDao.updateOrderStatus(orderId, status);
+    }
 }

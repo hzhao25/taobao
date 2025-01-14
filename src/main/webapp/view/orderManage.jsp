@@ -102,10 +102,19 @@
         <td><%= order.getCustomerId() %></td>
         <td><%= order.getStatus() %></td>
         <td>
-            <form action="orderDetails.jsp" method="get">
+            <!-- 查看详情按钮 -->
+            <form action="orderDetails.jsp" method="get" style="display:inline;">
                 <input type="hidden" name="orderId" value="<%= order.getId() %>">
                 <button type="submit">查看详情</button>
             </form>
+            <!-- 发货按钮 -->
+            <% if ("未发货".equals(order.getStatus())) { %>
+                <form action="ManageOrderServlet" method="post" style="display:inline;">
+                    <input type="hidden" name="action" value="ship">
+                    <input type="hidden" name="orderId" value="<%= order.getId() %>">
+                    <button type="submit">发货</button>
+                </form>
+            <% } %>
         </td>
     </tr>
     <%

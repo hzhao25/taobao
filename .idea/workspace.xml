@@ -9,7 +9,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="个人jsp页面" />
+    <list default="true" id="9a366d1b-b794-4fe0-9d73-ed5f17c91d1d" name="Default Changelist" comment="store页面">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/store/ManageOrderServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/store/StoreOrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/store/StoreOrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/store/StoreOrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/store/StoreOrderDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/orderManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/orderManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/view/store/orderManage.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/taobao-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +31,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -70,7 +82,7 @@
       <recent name="controller" />
     </key>
   </component>
-  <component name="RunManager" selected="JAR 应用程序.mysql-connector-java-5.1.48.jar">
+  <component name="RunManager" selected="Tomcat 服务器.Tomcat 9.0.97">
     <configuration name="Servlet" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="controller.individual.Servlet" />
       <module name="taobao" />
@@ -89,7 +101,6 @@
       <method v="2" />
     </configuration>
     <configuration name="Tomcat 9.0.97" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.97" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=utf-8" />
       <deployment>
         <artifact name="taobao:war exploded">
           <settings>
@@ -203,6 +214,7 @@
       <workItem from="1735753668423" duration="1719000" />
       <workItem from="1735786401836" duration="29841000" />
       <workItem from="1735821220208" duration="1003000" />
+      <workItem from="1736681346652" duration="8066000" />
     </task>
     <task id="LOCAL-00001" summary="。">
       <created>1734252558838</created>
@@ -282,7 +294,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="master" />
                       </list>
                     </value>
                   </entry>
@@ -293,6 +305,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="。" />
